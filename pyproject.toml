@@ -1,0 +1,17 @@
+[project]
+name = "pi-py"
+version = "0.1.0"
+authors = [{ name = "Ferdinand Keller", email = "ferdinand.keller@proton.me" }]
+description = "Archimedes algorithm to approximate PI."
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+
+dependencies = ["loguru>=0.7.2"]
+[dependency-groups]
+dev = ["ruff>=0.8.0"]
+
+[tool.ruff]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["D203", "D212", "COM812", "ISC001"]
